@@ -1,0 +1,7 @@
+n = int(input());
+
+cup = [0, 1, 2, 3];
+for i in range(n):
+    x, y = map(int, input().split());
+    cup[x], cup[y] = cup[y], cup[x];
+print(cup.index(1));
